@@ -1,20 +1,4 @@
-# steps:
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: ['build', '-t', 'gcr.io/civil-treat-406314/my-wordpress-image:$COMMIT_SHA', '.']
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: ['push', 'gcr.io/civil-treat-406314/my-wordpress-image:$COMMIT_SHA']
-# images:
-# - 'gcr.io/civil-treat-406314/my-wordpress-image:$COMMIT_SHA'
 
-# steps:
-#   - id: 'build docker image'
-#     name: 'gcr.io/cloud-builders/docker'
-#     args: ['build', '-t', 'us-central1-docker.pkg.dev/civil-treat-406314/website-tools/sql-db:0.1', '.']
-#     dir: .  
-
-#   - id: 'push docker image to Artifact Registry'
-#     name: 'gcr.io/cloud-builders/docker'
-#     args: ['push', 'us-central1-docker.pkg.dev/dcivil-treat-406314/website-tools/sql-db:0.1'] 
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/website-tools/wordpressimag', '.' ]
