@@ -1,0 +1,10 @@
+
+FROM wordpress
+
+#les valeurs pour la base de données
+ENV WORDPRESS_DB_USER=wordpress
+ENV WORDPRESS_DB_PASSWORD=ilovedevops
+ENV WORDPRESS_DB_NAME=wordpress
+ENV WORDPRESS_DB_HOST=0.0.0.0
+ENV WORDPRESS_DB_HOST=34.173.190.244
+
